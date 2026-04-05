@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import os
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("TOKEN2")
 
 intents = discord.Intents.default()
 intents.voice_states = True
@@ -33,7 +33,7 @@ async def on_ready():
         print("Không tìm thấy channel")
 
 if not TOKEN:
-    print("❌ Không tìm thấy TOKEN")
+    print("❌ Không tìm thấy TOKEN2")
 else:
-    print("✅ TOKEN OK")
-    bot.run(TOKEN)
+    print("✅ TOKEN2 OK")
+    bot.run(TOKEN2)
